@@ -1,0 +1,120 @@
+package com.konfigthis.client;
+
+import com.konfigthis.client.api.Class1ClickApplicationsApi;
+import com.konfigthis.client.api.AccountApi;
+import com.konfigthis.client.api.ActionsApi;
+import com.konfigthis.client.api.AppsApi;
+import com.konfigthis.client.api.BillingApi;
+import com.konfigthis.client.api.BlockStorageApi;
+import com.konfigthis.client.api.BlockStorageActionsApi;
+import com.konfigthis.client.api.CdnEndpointsApi;
+import com.konfigthis.client.api.CertificatesApi;
+import com.konfigthis.client.api.ContainerRegistryApi;
+import com.konfigthis.client.api.DatabasesApi;
+import com.konfigthis.client.api.DomainRecordsApi;
+import com.konfigthis.client.api.DomainsApi;
+import com.konfigthis.client.api.DropletActionsApi;
+import com.konfigthis.client.api.DropletsApi;
+import com.konfigthis.client.api.FirewallsApi;
+import com.konfigthis.client.api.FloatingIpActionsApi;
+import com.konfigthis.client.api.FloatingIpsApi;
+import com.konfigthis.client.api.FunctionsApi;
+import com.konfigthis.client.api.ImageActionsApi;
+import com.konfigthis.client.api.ImagesApi;
+import com.konfigthis.client.api.KubernetesApi;
+import com.konfigthis.client.api.LoadBalancersApi;
+import com.konfigthis.client.api.MonitoringApi;
+import com.konfigthis.client.api.ProjectResourcesApi;
+import com.konfigthis.client.api.ProjectsApi;
+import com.konfigthis.client.api.RegionsApi;
+import com.konfigthis.client.api.ReservedIpActionsApi;
+import com.konfigthis.client.api.ReservedIpsApi;
+import com.konfigthis.client.api.SshKeysApi;
+import com.konfigthis.client.api.SizesApi;
+import com.konfigthis.client.api.SnapshotsApi;
+import com.konfigthis.client.api.TagsApi;
+import com.konfigthis.client.api.UptimeApi;
+import com.konfigthis.client.api.VpcsApi;
+
+public class DigitalOcean {
+    private ApiClient apiClient;
+    public final Class1ClickApplicationsApi class1ClickApplications;
+    public final AccountApi account;
+    public final ActionsApi actions;
+    public final AppsApi apps;
+    public final BillingApi billing;
+    public final BlockStorageApi blockStorage;
+    public final BlockStorageActionsApi blockStorageActions;
+    public final CdnEndpointsApi cdnEndpoints;
+    public final CertificatesApi certificates;
+    public final ContainerRegistryApi containerRegistry;
+    public final DatabasesApi databases;
+    public final DomainRecordsApi domainRecords;
+    public final DomainsApi domains;
+    public final DropletActionsApi dropletActions;
+    public final DropletsApi droplets;
+    public final FirewallsApi firewalls;
+    public final FloatingIpActionsApi floatingIpActions;
+    public final FloatingIpsApi floatingIps;
+    public final FunctionsApi functions;
+    public final ImageActionsApi imageActions;
+    public final ImagesApi images;
+    public final KubernetesApi kubernetes;
+    public final LoadBalancersApi loadBalancers;
+    public final MonitoringApi monitoring;
+    public final ProjectResourcesApi projectResources;
+    public final ProjectsApi projects;
+    public final RegionsApi regions;
+    public final ReservedIpActionsApi reservedIpActions;
+    public final ReservedIpsApi reservedIps;
+    public final SshKeysApi sshKeys;
+    public final SizesApi sizes;
+    public final SnapshotsApi snapshots;
+    public final TagsApi tags;
+    public final UptimeApi uptime;
+    public final VpcsApi vpcs;
+
+    public DigitalOcean() {
+        this(null);
+    }
+
+    public DigitalOcean(Configuration configuration) {
+        this.apiClient = new ApiClient(null, configuration);
+        this.class1ClickApplications = new Class1ClickApplicationsApi(this.apiClient);
+        this.account = new AccountApi(this.apiClient);
+        this.actions = new ActionsApi(this.apiClient);
+        this.apps = new AppsApi(this.apiClient);
+        this.billing = new BillingApi(this.apiClient);
+        this.blockStorage = new BlockStorageApi(this.apiClient);
+        this.blockStorageActions = new BlockStorageActionsApi(this.apiClient);
+        this.cdnEndpoints = new CdnEndpointsApi(this.apiClient);
+        this.certificates = new CertificatesApi(this.apiClient);
+        this.containerRegistry = new ContainerRegistryApi(this.apiClient);
+        this.databases = new DatabasesApi(this.apiClient);
+        this.domainRecords = new DomainRecordsApi(this.apiClient);
+        this.domains = new DomainsApi(this.apiClient);
+        this.dropletActions = new DropletActionsApi(this.apiClient);
+        this.droplets = new DropletsApi(this.apiClient);
+        this.firewalls = new FirewallsApi(this.apiClient);
+        this.floatingIpActions = new FloatingIpActionsApi(this.apiClient);
+        this.floatingIps = new FloatingIpsApi(this.apiClient);
+        this.functions = new FunctionsApi(this.apiClient);
+        this.imageActions = new ImageActionsApi(this.apiClient);
+        this.images = new ImagesApi(this.apiClient);
+        this.kubernetes = new KubernetesApi(this.apiClient);
+        this.loadBalancers = new LoadBalancersApi(this.apiClient);
+        this.monitoring = new MonitoringApi(this.apiClient);
+        this.projectResources = new ProjectResourcesApi(this.apiClient);
+        this.projects = new ProjectsApi(this.apiClient);
+        this.regions = new RegionsApi(this.apiClient);
+        this.reservedIpActions = new ReservedIpActionsApi(this.apiClient);
+        this.reservedIps = new ReservedIpsApi(this.apiClient);
+        this.sshKeys = new SshKeysApi(this.apiClient);
+        this.sizes = new SizesApi(this.apiClient);
+        this.snapshots = new SnapshotsApi(this.apiClient);
+        this.tags = new TagsApi(this.apiClient);
+        this.uptime = new UptimeApi(this.apiClient);
+        this.vpcs = new VpcsApi(this.apiClient);
+    }
+
+}
